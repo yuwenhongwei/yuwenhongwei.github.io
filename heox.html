@@ -1,0 +1,635 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Hexo搭建Github静态博客 - 金石开 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=VDh8zSH1vx51MDqRT7hK220akQ58FjlaaeGuWBPhfOA1"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/126695.css?v=UMBopmQrwlLTeqoy98fQEWqAHFs%3d"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/zhcncn/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/zhcncn/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/zhcncn/wlwmanifest.xml"/>
+<script src="http://common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'zhcncn', cb_enable_mathjax=false;</script>
+<script src="/bundles/blog-common.js?v=FPlxjK7DBkhdjUge-xvpcctYZfiyO32cepQZO-j3WJk1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<style type="text/css">
+    .Abstract
+    {
+        padding: 15px;
+        border: dotted 2px #999;
+        color: #999;
+        font-family: 'Microsoft Yahei';
+        border-radius: 4px;
+    }
+        
+    .First
+    {
+        margin: 10px 0;
+        font-family: 'Microsoft Yahei';
+        text-align: left;
+        padding: 6px 20px;
+        color: #fff;
+        background: #55895B;
+        font-size: 20px;
+        border-radius: 4px;
+        clear: both;
+    }
+        
+        
+    .Second
+    {
+        margin: 10px 0;
+        font-family: 'Microsoft Yahei';
+        padding: 6px 20px;
+        background: #93C8A2;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 4px;
+        clear: both;
+    }
+        
+        
+    .Third
+    {
+        margin: 10px 0;
+        padding: 6px 20px;
+        font-family: 'Microsoft Yahei';
+        margin: 15px 0;
+        font-size: 16px;
+        color: fff;
+        background: #C6EFD2;
+        color: #999;
+        border-radius: 4px;
+        clear: both;
+    }
+    .note
+    {
+        margin: 10px 0;
+        padding: 15px 20px 15px 60px;
+        background: #FCFAA9 url('http://images.cnblogs.com/cnblogs_com/libaoheng/305804/o_yellow-pin.png') no-repeat 20px 0;
+        font-size: 15px;
+        font-family: 'Microsoft Yahei';
+        box-shadow: 0 0 8px #aaa;
+        clear: both;
+    }
+        
+    .demo
+    {
+        text-align: left;
+        padding: 6px 20px;
+        overflow: auto;
+        border-radius: 4px;
+        background: orange;
+        color: #fff;
+        font-size: 16px;
+        clear: both;
+    }
+        
+    .cnblogs_Highlighter
+    {
+        border: solid 1px #ccc;
+        clear: both;
+    }
+        
+    .cnblogs_code
+    {
+        background: #EFFFF4;
+        border: solid 0px #939393;
+        font-size: 14px;
+        clear: both;
+        padding: 10px 20px;
+    }
+    .cnblogs_code pre
+    {
+        font-size: 14px;
+    }
+    .cnblogs_code span
+    {
+        font-family: Courier New;
+        font-size: 14px;
+    }
+</style>
+<!--PageBeginHtml Block End-->
+
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+		
+<!--done-->
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/zhcncn/">金石开</a></div>
+<div class="subtitle"></div>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li id="nav_sitehome"></li>
+<li id="nav_myhome"></li>
+<li id="nav_q"><a class="menu" href="http://q.cnblogs.com/">博问</a></li>
+<li id="nav_ing"><a class="menu" href="http://home.cnblogs.com/ing/">闪存</a></li>
+<li id="nav_newpost"></li>
+<li id="nav_contact"></li>
+<li id="nav_rss">
+<!----></li>
+<li id="nav_admin"><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://i.cnblogs.com/">管理</a></li>
+</ul>
+
+		<div class="blogStats">
+			
+			
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhcncn/p/4097881.html">Hexo搭建Github静态博客</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><h1>1. 环境环境</h1>
+<h2>1.1 安装Git</h2>
+<p>请参考【1】</p>
+<h2>1.2 安装node.js</h2>
+<p>下载：http://nodejs.org/download/</p>
+<p>可以下载&nbsp;node-v0.10.33-x64.msi</p>
+<p>安装时直接保持默认配置即可。</p>
+<h1>2. 配置Github</h1>
+<h2>1.1 建立Repository</h2>
+<p>建立与你用户名对应的仓库，仓库名必须为【your_user_name<span style="background-color: #ffff00;"><strong>.github.io</strong></span>】</p>
+<h2>1.2 配置SSH-Key</h2>
+<p>参考【1】</p>
+<h1>3. 安装Hexo</h1>
+<p>关于Hexo的安装配置过程，请以官方Hexo【2】给出的步骤为准。</p>
+<h2>3.1&nbsp;Installation</h2>
+<p>打开Git命令行，执行如下命令</p>
+<div class="cnblogs_code">
+<pre>$ npm <span style="color: #0000ff;">install</span> -g hexo</pre>
+</div>
+<h2>3.2&nbsp;Quick Start</h2>
+<p><strong>&nbsp;1.&nbsp;Setup your blog</strong></p>
+<p>在电脑中建立一个名字叫「Hexo」的文件夹（比如我建在了D:\Hexo），然后在此文件夹中右键打开Git Bash。执行下面的命令</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">$ hexo init
+[</span><span style="color: #0000ff;">info</span><span style="color: #000000;">] Copying data
+[</span><span style="color: #0000ff;">info</span>] You are almost <span style="color: #0000ff;">done</span>! Don<span style="color: #800000;">'</span><span style="color: #800000;">t forget to run `npm install` before you start b</span>
+logging with Hexo!</pre>
+</div>
+<p><span style="line-height: 1.5;">Hexo随后会自动在目标文件夹建立网站所需要的文件。然后</span><span style="line-height: 1.5;">按照提示，运行&nbsp;</span>npm install（在&nbsp;/D/Hexo下）</p>
+<div class="cnblogs_code">
+<pre>npm <span style="color: #0000ff;">install</span></pre>
+</div>
+<p>会在D:\Hexo目录中安装&nbsp;node_modules。</p>
+<p><strong>2.&nbsp;Start the server</strong></p>
+<p>运行下面的命令（在&nbsp;/D/Hexo下）</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">$ hexo server
+[</span><span style="color: #0000ff;">info</span>] Hexo is running at http:<span style="color: #008000;">//</span><span style="color: #008000;">localhost:4000/. Press Ctrl+C to stop.</span></pre>
+</div>
+<p>表明Hexo Server已经启动了，在浏览器中打开&nbsp;http://localhost:4000/，这时可以看到Hexo已为你生成了一篇blog。</p>
+<p>你可以按Ctrl+C 停止Server。</p>
+<p><strong><span style="line-height: 1.5;">3.&nbsp;Create a new post</span></strong></p>
+<p>新打开一个git bash命令行窗口，cd到/D/Hexo下，执行下面的命令</p>
+<div class="cnblogs_code">
+<pre>$ hexo new <span style="color: #800000;">"</span><span style="color: #800000;">My New Post</span><span style="color: #800000;">"</span><span style="color: #000000;">
+[</span><span style="color: #0000ff;">info</span>] File created at d:\Hexo\source\_posts\My-New-Post.md</pre>
+</div>
+<p>刷新http://localhost:4000/，可以发现已生成了一篇新文章&nbsp;"My New Post"。</p>
+<p><strong>NOTE：</strong></p>
+<p>有一个问题，发现&nbsp;"My New Post" 被发了2遍，在Hexo server所在的git bash窗口也能看到create了2次。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">$ hexo server
+[</span><span style="color: #0000ff;">info</span>] Hexo is running at http:<span style="color: #008000;">//</span><span style="color: #008000;">localhost:4000/. Press Ctrl+C to stop.</span>
+<strong>[create] d:\Hexo\source\_posts\My-New-<span style="color: #000000;">Post.md
+[create] d:\Hexo\source\_posts\My</span>-New-Post.md</strong></pre>
+</div>
+<p>经验证，在hexo new "My New Post"&nbsp;时，如果按Ctrl+C将hexo server停掉，就不会出现发2次的问题了。</p>
+<p>所以，在hexo new文章时，需要stop server。</p>
+<p><strong>4.&nbsp;Generate static files</strong></p>
+<p>执行下面的命令，将markdown文件生成静态网页。</p>
+<div class="cnblogs_code">
+<pre>$ hexo generate</pre>
+</div>
+<p>该命令执行完后，会在&nbsp;D:\Hexo\public\ 目录下生成一系列html，css等文件。</p>
+<p><strong>5. 编辑文章</strong></p>
+<p>hexo new "My New Post"会在D:\Hexo\source\_posts目录下生成一个markdown文件：My-New-Post.md</p>
+<p>可以使用一个支持markdown语法的编辑器（比如 Sublime Text 2）来编辑该文件。</p>
+<p><strong>6. 部署到Github</strong></p>
+<p>部署到Github前需要配置_config.yml文件，首先找到下面的内容</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;"># Deployment
+## Docs: http:</span><span style="color: #008000;">//</span><span style="color: #008000;">hexo.io/docs/deployment.html</span>
+<span style="color: #000000;">deploy:
+  type:</span></pre>
+</div>
+<p>然后将它们修改为</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;"># Deployment
+## Docs: http:</span><span style="color: #008000;">//</span><span style="color: #008000;">hexo.io/docs/deployment.html</span>
+<span style="color: #000000;">deploy:
+  type: github
+  repository: <strong>git@github.com:zhchnchn/zhchnchn.github.io.git</strong></span>
+  branch: <span style="background-color: #ffff00;">master</span></pre>
+</div>
+<p><strong>NOTE1:</strong></p>
+<p>Repository：必须是SSH形式的url（git@github.com:zhchnchn/zhchnchn.github.io.git），而不能是HTTPS形式的url（https://github.com/zhchnchn/zhchnchn.github.io.git），否则会出现错误：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">$ hexo deploy
+[</span><span style="color: #0000ff;">info</span><span style="color: #000000;">] Start deploying: github
+[error] https:</span><span style="color: #008000;">//</span><span style="color: #008000;">github.com/zhchnchn/zhchnchn.github.io is not a valid repositor</span> URL!</pre>
+</div>
+<p><span style="line-height: 1.5;">使用SSH url，如果电脑没有开放SSH 端口，会致部署失败。</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">fatal: Could not read from remote repository.
+
+Please </span><span style="color: #0000ff;">make</span><span style="color: #000000;"> sure you have the correct access rights
+and the repository exists.</span></pre>
+</div>
+<p><strong><strong>NOTE2：</strong></strong></p>
+<p>如果你是为一个项目制作网站，那么需要把branch设置为gh-pages。</p>
+<p><strong>7. 测试</strong></p>
+<p>当部署完成后，在浏览器中打开http://zhchnchn.github.io/（<span style="background-color: #ffff00;">https</span>://zhchnchn.github.io/） ，正常显示网页，表明部署成功。</p>
+<p><strong>8. 总结：部署步骤</strong></p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">hexo clean
+hexo generate
+hexo deploy</span></pre>
+</div>
+<p>9. 总结：本地调试</p>
+<p>1. 在执行下面的命令后，</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">$ hexo g #生成
+$ hexo s #启动本地服务，进行文章预览调试</span></pre>
+</div>
+<p>浏览器输入http://localhost:4000，查看搭建效果。此后的每次变更_config.yml 文件或者新建文件都可以先用此命令调试，尤其是当你想调试新添加的主题时。</p>
+<p>2. 可以用简化的一条命令</p>
+<div class="cnblogs_code">
+<pre>hexo s -g</pre>
+</div>
+<h2>3.3 命令总结</h2>
+<h3>3.3.1 常用命令</h3>
+<div class="cnblogs_code">
+<pre>hexo new <span style="color: #800000;">"</span><span style="color: #800000;">postName</span><span style="color: #800000;">"</span><span style="color: #000000;"> #新建文章
+hexo new page </span><span style="color: #800000;">"</span><span style="color: #800000;">pageName</span><span style="color: #800000;">"</span><span style="color: #000000;"> #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，</span><span style="color: #800000;">'</span><span style="color: #800000;">ctrl + c</span><span style="color: #800000;">'</span><span style="color: #000000;">关闭server）
+hexo deploy #将.deploy目录部署到GitHub<br />hexo help  # 查看帮助<br />hexo version  #查看Hexo的版本<br /></span></pre>
+</div>
+<h3>3.3.2 复合命令</h3>
+<div class="cnblogs_code">
+<pre>hexo deploy -<span style="color: #000000;">g  </span><code><span class="comment">#生成加部署</span></code></pre>
+<pre><span style="color: #000000;">hexo server </span>-g  <code><span class="comment">#生成加预览</span></code></pre>
+</div>
+<p>命令的简写为：</p>
+<div class="cnblogs_code">
+<pre>hexo n ==<span style="color: #000000;"> hexo new
+hexo g </span>==<span style="color: #000000;"> hexo generate
+hexo s </span>==<span style="color: #000000;"> hexo server
+hexo d </span>== hexo deploy</pre>
+</div>
+<h1>4 配置Hexo</h1>
+<h2>4.1 配置文件介绍</h2>
+<p>下面的各个部分的介绍，请直接参考【3】。</p>
+<p><strong>1. 默认目录结构介绍</strong></p>
+<p><strong>2. _config.yml配置文件介绍</strong></p>
+<p><strong>NOTE：</strong>在修改_config.yml配置文件时，按照【3】的介绍进行修改后，重新 hexo clean 或者hexo deploy时，可能会出现如下错误：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">$ hexo clean
+[error] { name: </span><span style="color: #800000;">'</span><span style="color: #800000;">HexoError</span><span style="color: #800000;">'</span><span style="color: #000000;">,
+  reason: </span><span style="color: #800000;">'</span><span style="color: #800000;">can not read a block mapping entry; a multiline key may not be an imp</span>
+licit key<span style="color: #800000;">'</span><span style="color: #800000;">,</span>
+<span style="color: #000000;">  mark:
+   { name: </span><span style="color: #0000ff;">null</span><span style="color: #000000;">,
+     buffer: </span><span style="color: #800000;">'</span><span style="color: #800000;"># Hexo Configuration\n## Docs: http://hexo.io/docs/configuration.h</span>
+tml\n## Source: https:<span style="color: #008000;">//</span><span style="color: #008000;">github.com/hexojs/hexo/\n\n# Site\ntitle: Zhchnchn\nsubt</span>
+itle: Coding on the way\ndescription: Zhchnchn\<span style="color: #800000;">'</span><span style="color: #800000;">s blog\nauthor: Zhchnchn\nemail:</span>
+<span style="color: #800080;">115063497</span>@qq.com\nlanguage:zh-CN\n\n# URL\n## If your site is put <span style="color: #0000ff;">in</span><span style="color: #000000;"> a subdirect
+</span><span style="color: #800000; background-color: #ffff00;">......
+</span><span style="color: #000000;">,
+     position: </span><span style="color: #800080;">249</span><span style="color: #000000;">,
+     <span style="background-color: #ffff00;">line: </span></span><span style="color: #800080; background-color: #ffff00;">12</span><span style="color: #000000;"><span style="background-color: #ffff00;">,</span>
+     column: </span><span style="color: #800080;">0</span><span style="color: #000000;"> },
+  message: </span><span style="color: #800000;">'</span><span style="color: #800000;">Config file load failed</span><span style="color: #800000;">'</span><span style="color: #000000;">,
+  domain:
+   { domain: </span><span style="color: #0000ff;">null</span><span style="color: #000000;">,
+     _events: { error: [Function] },
+     _maxListeners: </span><span style="color: #800080;">10</span><span style="color: #000000;">,
+     members: [ [Object] ] },
+  domainThrown: </span><span style="color: #0000ff;">true</span><span style="color: #000000;">,
+  stack: undefined }</span></pre>
+</div>
+<p>我的_config.yml配置文件是一个空行，所以错误肯定在前面，经过对比发现，我前面修改了一下 # Site的各项设置，在冒号:后面没留空格导致了该问题，请对比一下下面的区别：</p>
+<p>错误的设置：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">author<span style="background-color: #ffff00;">:</span>Zhchnchn
+email<span style="background-color: #ffff00;">:</span></span><span style="color: #800080;">XXX</span><span style="color: #000000;">@qq.com
+language<span style="background-color: #ffff00;">:</span>zh</span>-CN</pre>
+</div>
+<p><span style="line-height: 1.5;">正确的设置：</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">author<span style="background-color: #ffff00;">:</span> Zhchnchn
+email<span style="background-color: #ffff00;">: </span></span><span style="color: #800080;">XXX</span><span style="color: #000000;">@qq.com
+language<span style="background-color: #ffff00;">:</span> zh</span>-CN</pre>
+</div>
+<p><strong><span style="line-height: 1.5;">3. 各个主题下的目录</span><span style="line-height: 1.5;">介绍（</span><span style="line-height: 1.5;">hexo\themes\下的<em>modernist</em>主题为例</span><span style="line-height: 1.5;">）</span></strong></p>
+<h2>4.2 安装主题</h2>
+<p>Hexo提供了很多主题，具体可参见Hexo Themes【4】。这里我选择使用Pacman主题。具体设置方法如下【5】</p>
+<h3>4.2.1 安装</h3>
+<p>1. 将Git Shell 切到/D/Hexo目录下，然后执行下面的命令，将pacman下载到&nbsp;themes/pacman 目录下。</p>
+<div class="cnblogs_code">
+<pre>$ git clone https:<span style="color: #008000;">//</span><span style="color: #008000;">github.com/A-limon/pacman.git themes/pacman</span></pre>
+</div>
+<p>2.&nbsp;修改你的博客根目录/D/Hexo下的config.yml配置文件中的theme属性，将其设置为pacman。</p>
+<p>3. 更新pacman主题</p>
+<div class="cnblogs_code">
+<pre>cd themes/<span style="color: #000000;">pacman
+git pull</span></pre>
+</div>
+<p><strong>NOTE</strong>：先备份_config.yml 文件后再升级<span style="font-size: 1.17em; line-height: 1.5;"><br /></span></p>
+<h3>4.2.2 配置</h3>
+<p>如果pacman的默认设置不能满足需要的话，你可以修改 /themes/pacman/下的配置文件_config.yml来定制。</p>
+<p>各个config的含义，请参考【5】中的介绍。</p>
+<h3>4.2.3 评论框</h3>
+<p>静态博客要使用第三方评论系统，pacman配置了多说评论系统（/themes/pacman/_config.yml），默认关闭，只要将其打开即可:false-&gt;true。直接用你的微博/豆瓣/人人/百度/开心网帐号登录多说，即可发表平评论。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">#### Comment
+duoshuo: 
+  enable: </span><span style="color: #0000ff; background-color: #ffff00;">true</span><span style="color: #000000;">  ## duoshuo.com
+  short_name:    ## duoshuo </span><span style="color: #0000ff;">short</span> name.</pre>
+</div>
+<h3>4.2.3 统计</h3>
+<p><span style="line-height: 1.5;">1. &nbsp;</span><span style="line-height: 1.5;">pacman配置了google analysis系统（/themes/pacman/_config.yml），默认关闭，将其打开。</span></p>
+<p><span style="line-height: 1.5;">2. 需要注册google analysis服务，以获得&nbsp;跟踪 ID。</span></p>
+<p><span style="line-height: 1.5;">如果已有google账户的话，可以直接注册。注册时，需要正确填写 网站的URL。注册成功后，会得到一个跟踪ID，以及一段跟踪代码。</span></p>
+<p><span style="line-height: 1.5;">3.&nbsp;pacman配置了google analysis系统，将其打开</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">#### Analytics
+google_analytics:
+  enable: </span><span style="color: #0000ff; background-color: #ffff00;">true</span>
+  <span style="color: #0000ff;">id</span>: <span style="background-color: #ffff00;">UA-<span style="color: #800080;">57032437</span>-<span style="color: #800080;">1</span> </span> ## e.g. UA-<span style="color: #800080;">1766729</span>-<span style="color: #800080;">8</span><span style="color: #000000;"> your google analytics ID.
+  site: <span style="background-color: #ffff00;">auto</span> ## e.g. yangjian.me your google analytics site or set the value as auto.</span></pre>
+</div>
+<p>4. 在themes\pacman\layout\_partial\google_analytics.ejs 中，已经将google的跟踪代码添加进来了【3】。</p>
+<div class="cnblogs_code">
+<pre>&lt;% <span style="color: #0000ff;">if</span> (theme.google_analytics.enable){ %&gt;
+&lt;script type="text/javascript"&gt;<span style="color: #ff0000;">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '&lt;%= <span style="background-color: #ffff00;">theme.google_analytics.id</span> %&gt;', '&lt;%= <span style="background-color: #ffff00;">theme.google_analytics.site</span> %&gt;');  
+ga('send', 'pageview');
+</span>&lt;/script&gt;
+&lt;% } %&gt;</pre>
+</div>
+<p>而且会将/themes/pacman/_config.yml中的id和site值读取进来。</p>
+<p>5. 如果设置不起作用，请试试在\themes\pacman\layout\_partial\head.ejs文件中最后，&lt;/head&gt;之前，添加上下面的语句试试。</p>
+<div class="cnblogs_code">
+<pre>&lt;%- partial('google_analytics') %&gt;</pre>
+</div>
+<h2>4.3 Custom 404页面</h2>
+<p>1. 网上大多数教程都将其说的极其简单：&ldquo;直接在根目录下创建自己的 404.html 就可以&rdquo;。但我却在这儿废了不少时间，究其原因是大家觉得太简单而说的不够明白。&ldquo;根目录下&rdquo;指的不是Hexo目录下，而是Hexo/source目录下。</p>
+<p>2. 404.html的内容可以设置为下面的内容【6】（NOTE：&nbsp;_config.yml中的permalink_defaults属性不需要修改）。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">---
+layout: default
+---
+</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+         <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">meta </span><span style="color: #ff0000;">charset</span><span style="color: #0000ff;">="UTF-8"</span> <span style="color: #0000ff;">/&gt;</span>
+         <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>404<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>                                                                                                                                        
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+         <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #ff0000;"> src</span><span style="color: #0000ff;">="http://www.qq.com/404/search_children.js"</span><span style="color: #ff0000;"> charset</span><span style="color: #0000ff;">="utf-8"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>也可以简化为这一行：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">type</span><span style="color: #0000ff;">="text/javascript"</span><span style="color: #ff0000;"> src</span><span style="color: #0000ff;">="http://www.qq.com/404/search_children.js"</span><span style="color: #ff0000;"> charset</span><span style="color: #0000ff;">="utf-8"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<h2>4.4 安装插件</h2>
+<h3>4.4.1&nbsp;sitemap插件</h3>
+<p>1. 可以将你站点地图提交给搜索引擎，文件路径\sitemap.xml。</p>
+<p>2. 安装</p>
+<div class="cnblogs_code">
+<pre>$ npm install hexo-generator-sitemap</pre>
+</div>
+<p>3. 启用，修改Hexo\_config.yml，增加以下内容</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;"># Extensions
+Plugins:
+- hexo-generator-sitemap
+
+#sitemap
+sitemap:
+  path: sitemap.xml</span></pre>
+</div>
+<p>4. 使用方法</p>
+<p>（1）访问 http://localhost:4000/sitemap.xml，即可看到站点地图。</p>
+<p>（2）那么怎么将它显示在页面中呢【7】？</p>
+<p>可以修改themes/pacman（也就是你正在使用的那个theme）下的 _config.yml，在 menu 节点下添加下面的内容（下面要介绍的RSS插件也同样）</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">menu:
+  Home: /
+  Archives: /archives
+<span style="background-color: #ffff00;">  Rss: /atom.xml
+  Sitemap: /sitemap.xml</span></span></pre>
+</div>
+<p>修改后的效果如图所示：</p>
+<p><img src="http://images.cnitblog.com/blog/408827/201411/242315413404912.png" alt="" /></p>
+<p>5.&nbsp;如何向google提交sitemap</p>
+<p>Sitemap 可方便管理员通知搜索引擎他们网站上有哪些可供抓取的网页。向google提交自己hexo博客的sitemap，有助于让别人更好地通过google搜索到自己的博客。</p>
+<p>如何向google提交sitemap，请参考【8】。</p>
+<p>6. 升级插件</p>
+<div class="cnblogs_code">
+<pre>$ npm update</pre>
+</div>
+<p>7. 卸载插件</p>
+<div class="cnblogs_code">
+<pre>$ npm uninstall hexo-generator-sitemap</pre>
+</div>
+<h3>4.4.2&nbsp;feed插件</h3>
+<p>1. RSS的生成插件，你可以在配置显示你站点的RSS，文件路径\atom.xml。</p>
+<p>2. 安装</p>
+<div class="cnblogs_code">
+<pre>$ npm install hexo-generator-feed</pre>
+</div>
+<p>3. 启用，修改Hexo\_config.yml，增加以下内容</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;"># Extensions
+Plugins:
+<span style="background-color: #ffff00;">- hexo-generator-feed</span>
+- hexo-generator-sitemap
+
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20<br /></span></pre>
+</div>
+<p>4.使用方法</p>
+<p>参见sitemap插件介绍</p>
+<h1>5. 优化Hexo</h1>
+<h2>5.1 添加&ldquo;Fork me on Github&rdquo; ribbon</h2>
+<p><span style="line-height: 1.5;">给blog主页添加一个&ldquo;Fork me on Github&rdquo;的绶带（ribbon）【9】，比如选择了红色的ribbon，将相应代码复制到Hexo正在使用的theme下layout.ejs中。比如我使用的pacman theme，那么将下面的代码（注意将you改为你自己的github上的注册名）</span></p>
+<div class="cnblogs_code">
+<pre>&lt;a href=<span style="color: #800000;">"</span><span style="color: #800000;">https://github.com/zhchnchn</span><span style="color: #800000;">"</span>&gt;&lt;img style=<span style="color: #800000;">"</span><span style="color: #800000;">position: absolute; top: 0; left: 0; border: 0;</span><span style="color: #800000;">"</span> src=<span style="color: #800000;">"</span><span style="color: #800000;">https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67</span><span style="color: #800000;">"</span> alt=<span style="color: #800000;">"</span><span style="color: #800000;">Fork me on GitHub</span><span style="color: #800000;">"</span> data-canonical-src=<span style="color: #800000;">"</span><span style="color: #800000;">https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png</span><span style="color: #800000;">"</span>&gt;&lt;/a&gt;</pre>
+</div>
+<p>粘贴到&nbsp;themes\pacman\layout\layout.ejs中，放置在 最后，标签&lt;/body&gt;之前即可。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>6 其他</h1>
+<h2>6.1 中文乱码</h2>
+<p>在md 文件中写中文内容，发布出来后为乱码，原因是md的编码不对，将md文件另存为&ldquo;UTF-8&rdquo;编码的文件即可解决问题。</p>
+<h1>References</h1>
+<p>【1】Windows下Git安装指南（http://www.cnblogs.com/zhcncn/p/3787849.html）</p>
+<p>【2】Hexo （https://github.com/hexojs/hexo）</p>
+<p>【3】hexo你的博客（http://ibruce.info/2013/11/22/hexo-your-blog/）</p>
+<p>【4】Hexo&nbsp;All Themes（https://github.com/hexojs/hexo/wiki/Themes）</p>
+<p>【5】Pacman主题介绍（http://yangjian.me/pacman/hello/introducing-pacman-theme/）</p>
+<p>【6】hexo添加404页面(http://ruocaiwu.github.io/2014/08/14/hexo%E6%B7%BB%E5%8A%A0404%E9%A1%B5%E9%9D%A2/)</p>
+<p>【7】如何搭建一个独立博客&mdash;&mdash;简明Github Pages与Hexo教程（http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/）</p>
+<p>【8】如何向google提交sitemap（详细）(http://fionat.github.io/blog/2013/10/23/sitemap/)</p>
+<p>【9】GitHub Ribbons(https://github.com/blog/273-github-ribbons)</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2014-11-14 17:57</span> <a href='http://www.cnblogs.com/zhcncn/'>金石开</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="http://i.cnblogs.com/EditPosts.aspx?postid=4097881" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(4097881);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=126695,cb_entryId=4097881,cb_blogApp=currentBlogApp,cb_blogUserGuid='cbf499ac-8f9d-e111-aa3f-842b2b196315',cb_entryCreatedDate='2014/11/14 17:57:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="开发者的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="opt_under_post"></div>
+<script type="text/javascript">
+    var enableGoogleAd = canShowAdsense(); 
+    fixPostBodyFormat();
+</script>
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+    (function () {
+        if (enableGoogleAd) {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +
+              '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        }
+  })();
+</script>
+<script type='text/javascript'>
+    try {
+        if (enableGoogleAd) {
+            googletag.cmd.push(function() {
+            googletag.defineSlot('/1090369/cnblogs_blogpost_C2', [468, 60], 'div-gpt-ad-1433581717989-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/cnblogs_blogpost_C1_sitehome', [300, 250], 'div-gpt-ad-1433581717989-1').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            });
+        };
+    } catch (e) { }
+</script>
+<div id="google_ad_c1" class="c_ad_block">
+    <div id='div-gpt-ad-1433581717989-1' style='height:250px; width:300px;'>
+    <script type='text/javascript'>
+        try {
+            if (enableGoogleAd) {
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1433581717989-1'); });
+            } else {
+                $('#div-gpt-ad-1433581717989-1').hide();
+            }
+    } catch (e) { }
+    </script>
+    </div>
+</div>
+<div id="under_post_news"></div>
+<div id="google_ad_c2" class="c_ad_block">
+<div id='div-gpt-ad-1433581717989-0' style='height:60px; width:468px;'>
+<script type='text/javascript'>
+try {
+    if (enableGoogleAd) {
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1433581717989-0'); });
+    } else {
+        $('#div-gpt-ad-1433581717989-0').hide();
+    }
+} catch (e) { }
+</script>
+</div>
+</div>
+<div id="under_post_kb"></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 200);
+});
+</script>
+</div>
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2015 金石开
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+</body>
+</html>
